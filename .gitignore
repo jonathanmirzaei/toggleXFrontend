@@ -1,0 +1,9 @@
+# ignore ALL .log files
+*.log
+*.dat
+
+node_modules/
+
+
+__pycache__/
+.vscode/
