@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchTotalActiveUsers, fetchEvents, fetchAllFeatureList } from "../../api-client";
+import { fetchTotalActiveUsers, fetchEvents, fetchAllFeatureList } from "../../api-client.ts";
 import { Button, Col, Row, Statistic, Table } from 'antd';
 import React from "react";
 

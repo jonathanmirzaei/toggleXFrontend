@@ -1,4 +1,4 @@
-import { API_SERVER_URL, API_ADMIN_URL } from "./public-config";
+import { API_SERVER_URL, API_ADMIN_URL } from "./public-config.ts"
 import axios from "axios";
 
 export const fetchUserList = async (accessToken, project) => {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchEnvironmentList, updateEnvironment, addEnvironment, deleteEnvironmentById } from "../../api-client";
+import { fetchEnvironmentList, updateEnvironment, addEnvironment, deleteEnvironmentById } from "../../api-client.ts"
 import React from "react";
 
 const EnvironmentList = ({ }) => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { updateFeature, addNewFeature } from "../../api-client";
-import Rules from "./rules";
+import { updateFeature, addNewFeature } from "../../api-client.ts";
+import Rules from "./rules.tsx";
 
 const SingelFeaturesPreview = ({ feature, isNew, onClick }) => {
     // const [isChecked, setIsChecked] = useState(feature.enable);

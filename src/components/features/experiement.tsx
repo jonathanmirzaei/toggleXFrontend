@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchExperiement } from "../../api-client";
-import SingelExperiementPreview from "./single-experiement-preview";
+import { fetchExperiement } from "../../api-client.ts";
+import SingelExperiementPreview from "./single-experiement-preview.tsx";
 import React from "react";
 
 const Experiemetn = ({ experiement_name, initailExperiement, isNew, selectedProject, selectedEnvironment, setContentClick }) => {

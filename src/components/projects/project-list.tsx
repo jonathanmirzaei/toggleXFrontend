@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchProjectList, updateProject, addProject, deleteProjectById } from "../../api-client";
+import { fetchProjectList, updateProject, addProject, deleteProjectById } from "../../api-client.ts";
 import React from "react";
 
 const ProjectList = ({ }) => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { updateExperiement, addNewExperiement } from "../../api-client";
-import Variations from "./variations";
-import Rules from "./rules";
+import { updateExperiement, addNewExperiement } from "../../api-client.ts";
+import Variations from "./variations.tsx";
+import Rules from "./rules.tsx";
 
 const SingelExperiementPreview = ({ feature, isNew, onClick }) => {
     // const [isChecked, setIsChecked] = useState(feature.enable);

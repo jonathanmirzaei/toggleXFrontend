@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchFeature } from "../../api-client";
-import SingelFeaturesPreview from "./single-feature-preview";
+import { fetchFeature } from "../../api-client.ts";
+import SingelFeaturesPreview from "./single-feature-preview.tsx";
 import React from "react";
 
 const Feature = ({ feature_name, initailFeature, isNew, selectedProject, selectedEnvironment, setContentClick }) => {

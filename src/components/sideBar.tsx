@@ -1,4 +1,5 @@
-import Menu from "./menu";
+import Menu from "./menu.tsx";
+import React from "react";
 
 const SideBar = ({ message, onClick }) => {
 

@@ -1,9 +1,15 @@
+import React from "react";
 import { useEffect, useState } from "react";
-import { fetchFeatureList } from "../../api-client";
 import { Table, Progress, Switch, Tag, Space, Popconfirm, Input } from "antd"
-import { deleteFeature, updateFeature } from "../../api-client";
+import { fetchFeatureList, deleteFeature, updateFeature } from "../../api-client.ts";
 //flag list
 const FeatureList = ({ selectedProject, selectedEnvironment, setContentClick }) => {
+
+   interface Feature {
+      _id: string;
+      name: string;
+    }
+    
 
    const [features, setFeatures] = useState([]);
 
@@ -49,12 +55,12 @@ const FeatureList = ({ selectedProject, selectedEnvironment, setContentClick }) 
       setContentClick("Edit Feature", feature);
    };
 
-   const actionDelete = async (event, feature) => {
+   const actionDelete = async (event, feature: Feature) => {
       event.preventDefault();
       try {
          await deleteFeature({ id: feature._id })
          setFeatures((prevFeatures) =>
-            prevFeatures.filter((currFeature) => currFeature._id !== feature._id)
+            prevFeatures.filter((currFeature: Feature) => currFeature._id !== feature._id)
          )
       } catch (error) {
          console.error("Error deleting feature:", error);
@@ -153,7 +159,7 @@ const FeatureList = ({ selectedProject, selectedEnvironment, setContentClick }) 
          // Restore the original list when input is cleared
          setFilteredFeatures(originalFeatures);
       } else {
-         const filteredData = originalFeatures.filter(entry =>
+         const filteredData = originalFeatures.filter((entry: Feature) =>
             entry.name.includes(currValue)
          );
          setFilteredFeatures(filteredData);

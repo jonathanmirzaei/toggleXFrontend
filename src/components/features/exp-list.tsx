@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { fetchExperiementList } from "../../api-client";
+import { fetchExperiementList } from "../../api-client.ts";
 import { Table, Progress, Switch, Tag, Space, Popconfirm, Input } from "antd"
-import { deleteFeature } from "../../api-client";
+import { deleteFeature } from "../../api-client.ts";
 
 const ExperiemetList = ({ selectedProject, selectedEnvironment, setContentClick }) => {
 

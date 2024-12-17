@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { fetchUserList } from "../../api-client";
+import { fetchUserList } from "../../api-client.ts";
 import { Table, Progress, Switch, Tag, Space, Popconfirm, Input } from "antd"
 //flag list
 const Users = ({ keycloak, selectedProject, setContentClick }) => {
